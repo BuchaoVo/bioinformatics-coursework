@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Temporary outputs
+*.log
+.cache/
+tmp/
+temp/
+
+# Data and large artifacts (opt in explicitly when safe)
+data/raw/*
+data/interim/*
+!data/raw/README.md
+!data/interim/README.md
+*.parquet
+*.h5
+*.hdf5
+*.fastq
+*.fastq.gz
+*.bam
+*.sam
+*.cram
+*.vcf
+*.vcf.gz
+*.nii
+*.nii.gz
+*.npz
+*.pkl
+*.joblib
+
+# Generated notebook checkpoints
+**/.ipynb_checkpoints/

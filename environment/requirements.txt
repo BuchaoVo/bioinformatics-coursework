@@ -1,0 +1,9 @@
+# Add only dependencies actually used by the course assignments.
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+jupyter
+biopython
