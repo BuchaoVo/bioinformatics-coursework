@@ -1,11 +1,5 @@
 # Bioinformatics Course
 
-A 16-week repository for course notes, programming assignments,
-computational experiments, and reports.
-
-**Tools:** Python · Linux / Shell · Jupyter Notebook\
-**Report formats:** Markdown · PDF
-
 ## Overview
 
 This repository organizes the learning materials and practical work
