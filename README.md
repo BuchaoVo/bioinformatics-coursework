@@ -1,46 +1,48 @@
-# Bioinformatics Course
+<div align="center">
 
-```{=html}
-<p align="center">
-```
-`<em>`{=html}Course Notes · Weekly Assignments · Computational
-Experiments · Reports`</em>`{=html}
-```{=html}
-</p>
-```
+# Bioinformatics Coursework
 
-------------------------------------------------------------------------
+**Weekly assignments, reproducible analysis workflows, computational experiments, and reports.**
 
-## Contents
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Shell](https://img.shields.io/badge/Shell-Bash%20%7C%20PowerShell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)](#getting-started)
+[![Course Status](https://img.shields.io/badge/Progress-Weeks%2001--09%20Planned-0969DA?style=flat-square)](#course-roadmap)
 
--   [Overview](#overview)
--   [Repository Structure](#repository-structure)
--   [Directory Guide](#directory-guide)
--   [Course Roadmap](#course-roadmap)
--   [Weekly Assignment Structure](#weekly-assignment-structure)
--   [Getting Started](#getting-started)
--   [Reproducibility](#reproducibility)
+[Overview](#overview) •
+[Repository Structure](#repository-structure) •
+[Directory Guide](#directory-guide) •
+[Course Roadmap](#course-roadmap) •
+[Weekly Assignment Structure](#weekly-assignment-structure) •
+[Getting Started](#getting-started) •
+[Reproducibility](#reproducibility)
+
+</div>
+
+---
 
 ## Overview
 
-This repository brings together weekly assignments, analysis notebooks, reusable scripts, figures, experimental results, and course reports.
+This repository consolidates weekly coursework, exploratory analysis notebooks, reusable scripts, publication-ready figures, experimental outputs, and written reports for the **Bioinformatics** course.
 
-Materials are organized by course week, with a consistent structure for each assignment. This makes the repository easier to navigate, maintain, reproduce, and review throughout the semester.
+All materials are organized chronologically by course week under a standardized directory convention, ensuring the codebase remains easy to navigate, maintain, reproduce, and review throughout the semester.
+
+---
 
 ## Repository Structure
 
-``` text
+```text
 bioinformatics-coursework/
 ├── README.md
-├── course-info/
+├── course-info/                 # Syllabus, schedule, and assignment index
 │   ├── syllabus.pdf
 │   ├── schedule.md
 │   └── assignment-list.md
-├── notes/
+├── notes/                       # Structured course and literature notes
 │   ├── concepts/
 │   ├── tools/
 │   └── literature/
-├── assignments/
+├── assignments/                 # Weekly coursework (standardized layout)
 │   ├── week-01-topic/
 │   │   ├── README.md
 │   │   ├── code/
@@ -50,155 +52,143 @@ bioinformatics-coursework/
 │   │   ├── results/
 │   │   └── report/
 │   └── ...
-├── projects/
-├── resources/
-├── templates/
-├── environment/
+├── projects/                    # Multi-topic integrative course projects
+├── resources/                   # Curated databases, docs, and references
+├── templates/                   # Reusable report and notebook templates
+├── environment/                 # Dependency specs and setup guides
 │   └── requirements.txt
 └── .github/
-    └── workflows/
+    └── workflows/               # Automated CI and repository checks
 ```
+
+---
 
 ## Directory Guide
 
-  -----------------------------------------------------------------------
-  Directory                           Description
-  ----------------------------------- -----------------------------------
-  `course-info/`                      Course syllabus, weekly schedule, and assignment list
+| Directory | Description |
+| :--- | :--- |
+| **`course-info/`** | Course syllabus, weekly schedule, and master assignment list. |
+| **`notes/concepts/`** | Notes on core bioinformatics concepts, algorithms, and statistical methods. |
+| **`notes/tools/`** | Practical guides for Python, Linux / Shell, and bioinformatics CLI tools. |
+| **`notes/literature/`** | Research paper summaries, critical reviews, and reading notes. |
+| **`assignments/`** | Self-contained weekly coursework, computational experiments, and reports. |
+| **`projects/`** | Extended projects integrating multiple course topics and workflows. |
+| **`resources/`** | External biological databases, software documentation, and reference links. |
+| **`templates/`** | Standardized templates for assignment `README`s, reports, and notebooks. |
+| **`environment/`** | Python dependency specifications (`requirements.txt`) and setup notes. |
+| **`.github/workflows/`** | Automated repository validation and continuous integration checks. |
 
-  `notes/concepts/`                   Notes on core bioinformatics concepts and methods
-
-  `notes/tools/`                      Notes on Python, Linux / Shell, and computational tools
-
-  `notes/literature/`                 Research paper summaries and reading notes
-
-  `assignments/`                      Weekly coursework, experiments, and reports
-
-  `projects/`                         Larger projects spanning multiple course topics
-
-  `resources/`                        Useful databases, software, documentation, and references
-
-  `templates/`                        Reusable assignment, report, and notebook templates
-
-  `environment/`                      Dependency specifications and environment setup notes
-
-  -----------------------------------------------------------------------
+---
 
 ## Course Roadmap
 
-The table below provides an overview of the course topics. Weeks 10--16 will be updated as the course progresses.
+The roadmap below outlines the planned weekly topics and primary deliverables. **Weeks 10–16** will be updated incrementally as the semester progresses.
 
-  ------------------------------------------------------------------------
-                Week               Topic               Main Deliverables
-  -------------------------------- ------------------- -------------------
-                 01                Introduction to     Course notes;
-                                   Bioinformatics and  environment setup
-                                   Research Questions  
+### Module 1 · Foundations (`Weeks 01–04`)
 
-                 02                Biomedical Data     Data dictionary;
-                                   Types and Data      quality assessment
-                                   Quality             
+| Week | Topic | Primary Deliverables | Status |
+| :---: | :--- | :--- | :---: |
+| **01** | Introduction to Bioinformatics and Research Questions | Course notes, environment setup | `Active` |
+| **02** | Biomedical Data Types and Data Quality | Data dictionary, quality assessment | `Active` |
+| **03** | Linux / Shell and Reproducible Workflows | Reproducible Shell scripts | `Active` |
+| **04** | Python for Data Processing and Visualization | Exploratory Jupyter Notebook | `Active` |
 
-                 03                Linux / Shell and   Shell scripts
-                                   Reproducible        
-                                   Workflows           
+### Module 2 · Statistical and Computational Methods (`Weeks 05–08`)
 
-                 04                Python for Data     Jupyter Notebook
-                                   Processing and      
-                                   Visualization       
+| Week | Topic | Primary Deliverables | Status |
+| :---: | :--- | :--- | :---: |
+| **05** | Statistical Inference and Hypothesis Testing | Statistical analysis report | `Active` |
+| **06** | Multiple Testing and False Discovery Rate (FDR) | Multiple-testing analysis & results | `Active` |
+| **07** | High-Dimensional Data Analysis and Dimensionality Reduction | PCA & dimensionality reduction analysis | `Active` |
+| **08** | Linear Models and Classification | Model comparison report | `Active` |
 
-                 05                Statistical         Analysis report
-                                   Inference and       
-                                   Hypothesis Testing  
+### Module 3 · Advanced Topics and Course Assignments (`Weeks 09–16`)
 
-                 06                Multiple Testing    Statistical
-                                   and False Discovery analysis and
-                                   Rate (FDR)          results
+| Week | Topic | Primary Deliverables | Status |
+| :---: | :--- | :--- | :---: |
+| **09** | Ensemble Learning and Bootstrap | Experiments, code, and report | `Active` |
+| **10–16** | *Topics to be announced* | Weekly assignments, experiments, and reports | `Upcoming` |
 
-                 07                High-Dimensional    PCA and related
-                                   Data Analysis and   analyses
-                                   Dimensionality      
-                                   Reduction           
-
-                 08                Linear Models and   Model comparison
-                                   Classification      report
-
-                 09                Ensemble Learning   Experiments, code,
-                                   and Bootstrap       and report
-
-               10--16              To be updated       Weekly assignments
-                                                       and reports
-  ------------------------------------------------------------------------
+---
 
 ## Weekly Assignment Structure
 
-Each assignment is stored in its own directory, named `week-XX-topic`, and follows a consistent structure:
+Each weekly assignment resides in its own directory named `week-XX-topic/` and adheres to a uniform layout:
 
-``` text
+```text
 week-XX-topic/
-├── README.md
-├── code/          # Python scripts and Shell commands
-├── notebooks/     # Exploratory analysis and visualizations
-├── data/          # Dataset notes and, where appropriate, input data
-├── figures/       # Figures used in the analysis and report
-├── results/       # Tables, metrics, and experiment outputs
+├── README.md          # Assignment overview, execution steps, and key findings
+├── code/              # Reusable Python scripts and Shell pipelines
+├── notebooks/         # Exploratory data analysis and visualization notebooks
+├── data/              # Dataset documentation and (where appropriate) input data
+├── figures/           # Generated plots used in analysis and reports
+├── results/           # Summary tables, evaluation metrics, and model outputs
 └── report/
-    ├── report.md
-    └── report.pdf
+    ├── report.md      # Source Markdown report
+    └── report.pdf     # Compiled PDF deliverable
 ```
 
-Each assignment-level `README.md` should briefly describe:
+> [!IMPORTANT]
+> **Assignment-Level `README.md` Specification**
+> Every `week-XX-topic/README.md` must briefly document five core sections:
+> 1. **Objective** — Research question, biological/statistical context, and assignment goals.
+> 2. **Data** — Dataset description, preprocessing notes, and original source.
+> 3. **Methods** — Analytical methods, algorithms, and workflow pipeline.
+> 4. **Execution** — Exact commands required to reproduce the analysis.
+> 5. **Findings** — Summary of key results, interpretations, and limitations.
 
-1.  **Objective** --- the research question and assignment goals.
-2.  **Data** --- the dataset and its source.
-3.  **Methods** --- the methods and analysis workflow.
-4.  **Execution** --- how to run the code.
-5.  **Findings** --- the main results and limitations.
+---
 
 ## Getting Started
 
 ### 1. Clone the repository
 
-``` bash
-git clone https://github.com/BuchaoVo/bioinformatics-coursework.git
+```bash
+git clone [https://github.com/BuchaoVo/bioinformatics-coursework.git](https://github.com/BuchaoVo/bioinformatics-coursework.git)
 cd bioinformatics-coursework
 ```
 
-### 2. Create a virtual environment
+### 2. Create and activate a virtual environment
 
-**Linux / macOS**
+* **Linux / macOS**
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate
+  ```
 
-``` bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-**Windows PowerShell**
-
-``` powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
+* **Windows PowerShell**
+  ```powershell
+  python -m venv .venv
+  .venv\Scripts\Activate.ps1
+  ```
 
 ### 3. Install dependencies
 
-``` bash
+```bash
 python -m pip install --upgrade pip
 python -m pip install -r environment/requirements.txt
 ```
 
 ### 4. Launch Jupyter Notebook
 
-``` bash
+```bash
 jupyter notebook
 ```
 
+---
+
 ## Reproducibility
 
-To keep coursework reproducible and maintainable:
+To ensure all coursework remains verifiable and easy to rerun across environments:
 
--   Prefer relative paths over machine-specific absolute paths.
--   Record relevant package versions and random seeds.
--   Keep reusable analysis logic in `code/`; use notebooks for exploration and visualization.
--   Save figures and tables in the corresponding `figures/` and `results/` directories.
--   Keep the Markdown report and its PDF version together in `report/`.
+- **Relative Paths Only** — Always use repository-relative paths rather than machine-specific absolute paths.
+- **Pinned Environments & Seeds** — Record relevant package versions and fix random seeds for stochastic experiments.
+- **Separation of Logic & Exploration** — Place reusable functions and pipelines in `code/`; keep `notebooks/` focused on exploration and visualization.
+- **Structured Outputs** — Export all generated plots to `figures/` and numerical tables/metrics to `results/`.
+- **Synchronized Reports** — Maintain both the Markdown source (`report.md`) and compiled document (`report.pdf`) inside `report/`.
+
+---
+
+<div align="center">
+<sub>Maintained by <a href="https://github.com/BuchaoVo">BuchaoVo</a> · <a href="#bioinformatics-coursework">Back to Top ↑</a></sub>
+</div>
