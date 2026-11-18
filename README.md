@@ -206,14 +206,3 @@ To make coursework easier to reproduce and maintain:
     corresponding `figures/` and `results/` directories.
 -   Keep the Markdown report and its PDF version together in `report/`.
 
-## Updating the Repository
-
-After completing an assignment, add and commit the relevant files:
-
-``` bash
-git add assignments/week-XX-topic
-git commit -m "Add Week XX assignment"
-git push
-```
-
-Replace `XX` with the corresponding course week.
