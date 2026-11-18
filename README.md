@@ -2,14 +2,9 @@
 
 ## Overview
 
-This repository organizes the learning materials and practical work
-completed throughout the Bioinformatics course. It brings together
-weekly assignments, analysis notebooks, reusable scripts, figures,
-results, and written reports.
+This repository organizes the learning materials and practical work completed throughout the Bioinformatics course. It brings together weekly assignments, analysis notebooks, reusable scripts, figures, results, and written reports.
 
-The repository is organized by course week. Each assignment follows a
-consistent structure so that the analysis process is easy to navigate,
-reproduce, and review.
+The repository is organized by course week. Each assignment follows a consistent structure so that the analysis process is easy to navigate, reproduce, and review.
 
 ## Repository Structure
 
@@ -80,8 +75,7 @@ bioinformatics-coursework/
 
 ## Course Roadmap
 
-The following table provides an overview of the course topics. Weeks
-10--16 will be updated as the course progresses.
+The following table provides an overview of the course topics. Weeks 10--16 will be updated as the course progresses.
 
   ------------------------------------------------------------------------
                           Week Topic                 Main Deliverables
@@ -126,8 +120,7 @@ The following table provides an overview of the course topics. Weeks
 
 ## Weekly Assignment Structure
 
-Each assignment is stored in its own directory, named `week-XX-topic`,
-and follows the structure below:
+Each assignment is stored in its own directory, named `week-XX-topic`, and follows the structure below:
 
 ``` text
 week-XX-topic/
@@ -194,9 +187,7 @@ To make coursework easier to reproduce and maintain:
 
 -   Prefer relative paths over machine-specific absolute paths.
 -   Record relevant package versions and random seeds.
--   Keep reusable analysis logic in `code/` and use notebooks for
-    exploration and visualization.
--   Save figures, tables, and other analysis outputs in the
-    corresponding `figures/` and `results/` directories.
+-   Keep reusable analysis logic in `code/` and use notebooks for exploration and visualization.
+-   Save figures, tables, and other analysis outputs in the corresponding `figures/` and `results/` directories.
 -   Keep the Markdown report and its PDF version together in `report/`.
 
