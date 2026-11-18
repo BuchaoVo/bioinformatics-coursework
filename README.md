@@ -1,10 +1,31 @@
 # Bioinformatics Course
 
+```{=html}
+<p align="center">
+```
+`<em>`{=html}Course Notes · Weekly Assignments · Computational
+Experiments · Reports`</em>`{=html}
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+## Contents
+
+-   [Overview](#overview)
+-   [Repository Structure](#repository-structure)
+-   [Directory Guide](#directory-guide)
+-   [Course Roadmap](#course-roadmap)
+-   [Weekly Assignment Structure](#weekly-assignment-structure)
+-   [Getting Started](#getting-started)
+-   [Reproducibility](#reproducibility)
+
 ## Overview
 
-This repository organizes the learning materials and practical work completed throughout the Bioinformatics course. It brings together weekly assignments, analysis notebooks, reusable scripts, figures, results, and written reports.
+This repository brings together weekly assignments, analysis notebooks, reusable scripts, figures, experimental results, and course reports.
 
-The repository is organized by course week. Each assignment follows a consistent structure so that the analysis process is easy to navigate, reproduce, and review.
+Materials are organized by course week, with a consistent structure for each assignment. This makes the repository easier to navigate, maintain, reproduce, and review throughout the semester.
 
 ## Repository Structure
 
@@ -38,89 +59,80 @@ bioinformatics-coursework/
     └── workflows/
 ```
 
-### Directory Guide
+## Directory Guide
 
   -----------------------------------------------------------------------
-  Directory                           Contents
+  Directory                           Description
   ----------------------------------- -----------------------------------
-  `course-info/`                      Course syllabus, weekly schedule,
-                                      and assignment list
+  `course-info/`                      Course syllabus, weekly schedule, and assignment list
 
-  `notes/concepts/`                   Notes on core bioinformatics
-                                      concepts and methods
+  `notes/concepts/`                   Notes on core bioinformatics concepts and methods
 
-  `notes/tools/`                      Notes on Python, Linux / Shell, and
-                                      computational tools
+  `notes/tools/`                      Notes on Python, Linux / Shell, and computational tools
 
-  `notes/literature/`                 Research paper summaries and
-                                      reading notes
+  `notes/literature/`                 Research paper summaries and reading notes
 
-  `assignments/`                      Weekly coursework, experiments, and
-                                      reports
+  `assignments/`                      Weekly coursework, experiments, and reports
 
-  `projects/`                         Larger projects that span multiple
-                                      course topics
+  `projects/`                         Larger projects spanning multiple course topics
 
-  `resources/`                        Useful databases, software,
-                                      documentation, and references
+  `resources/`                        Useful databases, software, documentation, and references
 
-  `templates/`                        Reusable assignment, report, and
-                                      notebook templates
+  `templates/`                        Reusable assignment, report, and notebook templates
 
-  `environment/`                      Dependency specifications and
-                                      environment setup notes
+  `environment/`                      Dependency specifications and environment setup notes
 
-  `.github/workflows/`                Automated repository checks
   -----------------------------------------------------------------------
 
 ## Course Roadmap
 
-The following table provides an overview of the course topics. Weeks 10--16 will be updated as the course progresses.
+The table below provides an overview of the course topics. Weeks 10--16 will be updated as the course progresses.
 
   ------------------------------------------------------------------------
-                          Week Topic                 Main Deliverables
-  ---------------------------- --------------------- ---------------------
-                            01 Introduction to       Course notes,
-                               Bioinformatics and    environment setup
-                               Research Questions    
+                Week               Topic               Main Deliverables
+  -------------------------------- ------------------- -------------------
+                 01                Introduction to     Course notes;
+                                   Bioinformatics and  environment setup
+                                   Research Questions  
 
-                            02 Biomedical Data Types Data dictionary,
-                               and Data Quality      quality assessment
+                 02                Biomedical Data     Data dictionary;
+                                   Types and Data      quality assessment
+                                   Quality             
 
-                            03 Linux / Shell and     Shell scripts
-                               Reproducible          
-                               Workflows             
+                 03                Linux / Shell and   Shell scripts
+                                   Reproducible        
+                                   Workflows           
 
-                            04 Python for Data       Jupyter Notebook
-                               Processing and        
-                               Visualization         
+                 04                Python for Data     Jupyter Notebook
+                                   Processing and      
+                                   Visualization       
 
-                            05 Statistical Inference Analysis report
-                               and Hypothesis        
-                               Testing               
+                 05                Statistical         Analysis report
+                                   Inference and       
+                                   Hypothesis Testing  
 
-                            06 Multiple Testing and  Statistical analysis
-                               False Discovery Rate  and results
-                               (FDR)                 
+                 06                Multiple Testing    Statistical
+                                   and False Discovery analysis and
+                                   Rate (FDR)          results
 
-                            07 High-Dimensional Data PCA and related
-                               Analysis and          analyses
-                               Dimensionality        
-                               Reduction             
+                 07                High-Dimensional    PCA and related
+                                   Data Analysis and   analyses
+                                   Dimensionality      
+                                   Reduction           
 
-                            08 Linear Models and     Model comparison
-                               Classification        report
+                 08                Linear Models and   Model comparison
+                                   Classification      report
 
-                            09 Ensemble Learning and Experiments, code,
-                               Bootstrap             and report
+                 09                Ensemble Learning   Experiments, code,
+                                   and Bootstrap       and report
 
-                        10--16 To be updated         Weekly assignments
-                                                     and reports
+               10--16              To be updated       Weekly assignments
+                                                       and reports
   ------------------------------------------------------------------------
 
 ## Weekly Assignment Structure
 
-Each assignment is stored in its own directory, named `week-XX-topic`, and follows the structure below:
+Each assignment is stored in its own directory, named `week-XX-topic`, and follows a consistent structure:
 
 ``` text
 week-XX-topic/
@@ -135,47 +147,47 @@ week-XX-topic/
     └── report.pdf
 ```
 
-Each assignment `README.md` should briefly describe:
+Each assignment-level `README.md` should briefly describe:
 
--   The research question and assignment objectives
--   The dataset and its source
--   The methods and analysis workflow
--   How to run the code
--   The main findings and limitations
+1.  **Objective** --- the research question and assignment goals.
+2.  **Data** --- the dataset and its source.
+3.  **Methods** --- the methods and analysis workflow.
+4.  **Execution** --- how to run the code.
+5.  **Findings** --- the main results and limitations.
 
 ## Getting Started
 
-Clone the repository:
+### 1. Clone the repository
 
 ``` bash
 git clone https://github.com/BuchaoVo/bioinformatics-coursework.git
 cd bioinformatics-coursework
 ```
 
-Create and activate a Python virtual environment.
+### 2. Create a virtual environment
 
-**Linux / macOS:**
+**Linux / macOS**
 
 ``` bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell:**
+**Windows PowerShell**
 
 ``` powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-Install the Python dependencies:
+### 3. Install dependencies
 
 ``` bash
 python -m pip install --upgrade pip
 python -m pip install -r environment/requirements.txt
 ```
 
-Launch Jupyter Notebook:
+### 4. Launch Jupyter Notebook
 
 ``` bash
 jupyter notebook
@@ -183,11 +195,10 @@ jupyter notebook
 
 ## Reproducibility
 
-To make coursework easier to reproduce and maintain:
+To keep coursework reproducible and maintainable:
 
 -   Prefer relative paths over machine-specific absolute paths.
 -   Record relevant package versions and random seeds.
--   Keep reusable analysis logic in `code/` and use notebooks for exploration and visualization.
--   Save figures, tables, and other analysis outputs in the corresponding `figures/` and `results/` directories.
+-   Keep reusable analysis logic in `code/`; use notebooks for exploration and visualization.
+-   Save figures and tables in the corresponding `figures/` and `results/` directories.
 -   Keep the Markdown report and its PDF version together in `report/`.
-
