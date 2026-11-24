@@ -5,10 +5,10 @@
 **Date:** YYYY-MM-DD
 
 ## Abstract
-研究问题、数据、方法、主要结果与结论（简洁概括）。
+Briefly summarize the research question, data, methods, main results, and conclusion.
 
 ## 1. Introduction
-研究背景、科学问题与研究目标。
+Describe the background, scientific question, and research objectives.
 
 ## 2. Materials and Methods
 ### 2.1 Dataset
@@ -17,16 +17,16 @@
 ### 2.4 Evaluation and Statistical Analysis
 
 ## 3. Results
-按研究问题组织结果。图表应有编号、标题、单位和图注。
+Organize results by research question. Number figures and tables and provide titles, units, and captions.
 
 ## 4. Discussion
-解释发现，与已有知识比较，讨论偏倚与局限。
+Interpret the findings, compare them with existing knowledge, and discuss biases and limitations.
 
 ## 5. Conclusion
-直接回答研究问题，不超出数据支持范围。
+Answer the research question directly, within the limits of the evidence.
 
 ## Data and Code Availability
-数据来源、许可、代码运行入口与环境信息。
+Specify data sources, licenses, code entry points, and environment details.
 
 ## References
-使用统一引文格式，提供 DOI 或稳定链接。
+Use a consistent citation format and provide DOIs or stable links.
