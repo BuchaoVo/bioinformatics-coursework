@@ -1,13 +1,65 @@
-# 每周作业维护规则
+# Weekly Assignment Maintenance Rules
 
-用户约定：后续各周沿用第九周精简后的标准，以完成课程实验和最终课程大作业为目的。
+> [!NOTE]
+> **Core Baseline:** Subsequent weeks follow the streamlined standard established in **Week 09**, with all organization and maintenance geared toward completing the coursework experiments and the final course project.
 
-- 每周只保留主目录下一个 `README.md`，不新增子目录 README 或其他 README 变体。任务要求、数据来源、目录说明、运行命令和完成情况集中写入主 README；保留用户已有的语言与排版风格。
-- 只保留课程实验需要的代码、输入数据、依赖、数值结果、必要图表、报告及源稿、课件和工作单。目录按实际内容建立，不创建空目录、占位文件或无实际用途的 Notebook。
-- 不添加哈希清单、来源映射、归档清单、校验报告、运行完成标记、持久化日志或额外工程框架。简短检查直接执行，无需另存检查文件；脚本也不应重新生成这些冗余产物。
-- 随机种子、模型参数、必要依赖版本、数据划分和科学分析所需的结果应保留。数据有效性与分组隔离检查不能因精简而移除；已有科学数值与结果不随目录清理改写。
-- 图表只保留报告实际使用的格式，第九周为 PDF 和 PNG；默认不额外生成 SVG、低分辨率预览或重复总览图。
-- 删除重复文件、无关参考作业、教师参考答案及当前实验不依赖的演示、课件生成、原始数据重建材料。删除前检查代码调用、文件读取、报告构建及文档链接，避免破坏实验。
-- 处理压缩包时先检查并归类内容，确认所需文件完整后删除原压缩包，嵌套重复包不保留。原始数据压缩包若仍是实验输入则保留。
-- 清理后同步更新运行路径与主 README，做与改动相称的入口、链接或试运行检查。无需为目录整理重训全部模型或重建最终报告；明确说明未验证的部分，不把材料齐备写成已复现、已提交或已验收。
-- 不因某周维护任务批量修改其他周，也不自动提交或推送 Git。
+---
+
+## 1. Documentation & Directory Standards
+
+* **Single Main `README.md` Policy**
+  Keep only one `README.md` in each week's root directory—do not add subdirectory READMEs or README variants. Consolidate task requirements, data sources, directory descriptions, run commands, and progress status into the main `README.md`, using English and preserving the existing formatting style.
+* **English by Default**
+  Use English for new or maintained documentation, code comments, Notebook narrative, user-facing messages, model labels, and newly generated plot/table labels. Prefer English filenames for new artifacts. Preserve the language and filenames of original course reports, slides, images, and externally referenced artifacts when translation or renaming would alter originals or break references; explain these exceptions in the main README. Keep scientific values and required course terminology intact. Apply this rule to future weekly maintenance without automatically rewriting unrelated weeks.
+* **Content-Driven Directories, No Placeholders**
+  Retain only the **code, input data, dependencies, numerical results, required figures, reports and sources, lecture slides, and worksheets** needed for the coursework experiments. Create folders strictly based on actual contents—no empty directories, placeholder files, or unused notebooks.
+
+---
+
+## 2. Artifact Lean-Out & Redundancy Control
+
+* **No Boilerplate Metadata or Persistent Logs**
+  Do not add hash manifests, provenance mappings, archive manifests, verification reports, completion markers, persistent logs, or extra engineering frameworks. Run quick sanity checks directly in the terminal without saving check files, and ensure scripts do not regenerate these redundant artifacts.
+* **Keep Only Report-Used Figure Formats**
+  Retain figures only in the formats actually embedded in the report (e.g., `PDF` and `PNG` in Week 09). Do not generate extra `SVG` files, low-resolution previews, or duplicate overview grids by default.
+
+---
+
+## 3. Scientific Rigor & Data Isolation
+
+* **Preserve All Reproducibility Essentials**
+  Random seeds, model hyperparameters, required dependency versions, data splits, and outputs needed for scientific analysis must remain intact. **Never alter existing scientific numbers or experimental results** during directory cleanup.
+* **Keep Critical Data Validation Checks**
+  Data validity and group-isolation checks are essential safeguards for scientific integrity and must not be removed for the sake of brevity.
+
+---
+
+## 4. Cleanup Workflow & Archive Handling
+
+* **Verify Dependencies Before Deleting**
+  Remove duplicate files, unrelated reference assignments, instructor solution keys, and any demos, slide-generation scripts, or raw-data reconstruction materials not required by the current experiments. **Before deleting anything, check all code imports/calls, file reads, report build scripts, and document links** to avoid breaking existing workflows.
+* **Archive Inspection & Deduplication**
+  When handling compressed archives, inspect and categorize their contents first. Once required files are confirmed intact, delete the original archive and remove any nested duplicate archives. Retain a raw data archive only if experiment scripts still read directly from it.
+
+---
+
+## 5. Wrap-Up Checks & Repository Boundaries
+
+* **Sync Paths & State Status Honestly**
+  After cleanup, update runtime paths and the main `README.md`, then run proportional entry-point, link, or smoke checks. Do not retrain all models or rebuild final reports merely for directory tidying. **Explicitly note any unverified components—never label "materials complete" as "reproduced," "submitted," or "accepted."**
+* **Strict Operational Scope**
+  Do not batch-modify other weekly folders while maintaining a given week, and never automatically run `git commit` or `git push`.
+
+---
+
+## Quick Reference Matrix
+
+| Dimension | Keep / Do | Remove / Avoid |
+| :--- | :--- | :--- |
+| **Documentation** | Single root `README.md`, slides, worksheet, reports & sources | Subdirectory READMEs, README variants, empty placeholder notes |
+| **Folders & Files** | Active code, input data, dependencies, numerical outputs | Empty folders, placeholder files, unused notebooks |
+| **Figure Formats** | Formats actually used in reports (e.g., `PDF`, `PNG`) | Unused `SVG`s, low-res previews, duplicate overview grids |
+| **Metadata & Logs** | Direct CLI execution for quick checks | Hash manifests, provenance maps, verification reports, completion flags, persistent logs |
+| **Archives** | Raw data archives read directly by scripts | Original archives after extraction, nested duplicate archives |
+| **Reproducibility** | Seeds, hyperparameters, pinned versions, splits, group-isolation checks | Modifying existing scientific numbers, removing data validity checks |
+| **Status & Git** | Synced paths/links, clear notes on unverified items | Overstating status (reproduced/accepted), cross-week batch edits, auto-commit/push |

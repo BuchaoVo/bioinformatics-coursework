@@ -1,0 +1,5 @@
+﻿site,n,positive,positive_rate,sensitivity,specificity,cost
+Cleveland,20,8,0.4,0.75,0.6666666666666666,14
+Hungary,18,6,0.3333333333333333,1.0,0.5,6
+Switzerland,5,4,0.8,1.0,0.0,1
+VA Long Beach,11,6,0.5454545454545454,1.0,0.0,5

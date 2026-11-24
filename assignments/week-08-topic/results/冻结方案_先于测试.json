@@ -1,0 +1,18 @@
+{
+  "model": "Shrinkage LDA",
+  "threshold": 0.15,
+  "selection": "Only Logistic vs shrinkage-LDA; minimize 5*FN+FP on single-pass 5-fold development OOF; tie-break Brier",
+  "test_locked_before_model_and_threshold_selection": true,
+  "random_state": 2026,
+  "dev_test_split": "stratified 80/20",
+  "preprocess": "cholesterol=0 -> NA; train-fold median numeric+missing indicators+standardize; train-fold mode categorical+one-hot; no site/identifiers/num",
+  "primary_test_metrics": [
+    "AP",
+    "ROC_AUC",
+    "Brier",
+    "Sensitivity",
+    "Specificity",
+    "F1",
+    "Cost"
+  ]
+}
