@@ -39,7 +39,7 @@ week-XX-topic/
 
 | Guideline | Standard |
 | :--- | :--- |
-| **Language** | Use English for maintained text and new artifacts; preserve original course materials and required reference names. |
+| **Language** | Use English for maintained text and English ASCII filenames for all files, including imported materials. Update references when renaming; preserve original document contents and scientific values. |
 | **Single Main `README.md`** | Keep only one `README.md` in the weekly root folder—no subdirectory READMEs or variants. |
 | **Content-Driven Structure** | Retain only files actively used by experiments or reports; omit folders that have no contents. |
 | **Lean Figures & Artifacts** | Keep only figure formats referenced in the report (`PDF`, `PNG`); skip extra previews or persistent logs. |

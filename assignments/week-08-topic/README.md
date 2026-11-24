@@ -25,17 +25,19 @@ This folder brings together the code, notebook, figures, and written reports for
 
 Using 270 heart disease records, the experiments compare **Linear Discriminant Analysis (LDA)** and **Logistic Regression** in terms of modeling objectives, probability formulation, distributional assumptions, and parameter counts, while evaluating misclassification costs, probability calibration, and coefficient stability.
 
+All filenames use English. Original report and image contents are preserved. The signed PDF retains `original_lecture07` in its English filename because the supplied filename identified Lecture 7, although its contents match this week; verify the course numbering before submission.
+
 ### Quick Entry Points
 
 | Category | File | Description |
 | :--- | :--- | :--- |
 | **Worksheet & Design** | [Original Worksheet (Tasks 1–9 + 5 Questions)](resources/student-worksheet.md) | Prompt sheet, core tasks, and follow-up questions |
 | **Worksheet & Design** | [Experiment Design Guide](resources/experiment-design.md) | Experimental protocol, preprocessing, and evaluation rules |
-| **Reports & Solutions** | [Complete Worksheet Solutions (4 pages)](report/第8讲_Linear_Models_Worksheet_逐题完整解答.pdf) | Step-by-step answers and derivations (editable `.docx` in `report/`) |
-| **Reports & Solutions** | [Course Research Report (7 pages)](report/第8讲_线性模型与LDA_心脏病数据_双栏课程研究报告.pdf) | Two-column study paper on the heart disease dataset (`.docx` in `report/`) |
-| **Reports & Solutions** | [27-Figure Analysis Atlas](report/第8讲_27幅医学统计与机器学习分析图集.pdf) | Complete visual collection of statistical and model diagnostics |
-| **Reports & Solutions** | [Course Report (8 pages)](report/詹步超%2024520260158428%20第七讲.pdf) · [Word](report/詹步超%2024520260158428%20.docx) | Final formatted write-up covering this week's study |
-| **Interactive Code** | [Reproducible Analysis Notebook](notebooks/第8讲_Linear_Model_LDA_Logistic_可复现Notebook.ipynb) | Step-by-step notebook organized into stages A–E |
+| **Reports & Solutions** | [Complete Worksheet Solutions (4 pages)](report/week08_linear_models_worksheet_solutions.pdf) | Step-by-step answers and derivations (editable `.docx` in `report/`) |
+| **Reports & Solutions** | [Course Research Report (7 pages)](report/week08_heart_disease_linear_models_report.pdf) | Two-column study paper on the heart disease dataset (`.docx` in `report/`) |
+| **Reports & Solutions** | [27-Figure Analysis Atlas](report/week08_analysis_figure_atlas.pdf) | Complete visual collection of statistical and model diagnostics |
+| **Reports & Solutions** | [Course Report (8 pages)](report/week08_signed_report_original_lecture07.pdf) · [Word](report/week08_signed_report.docx) | Final formatted write-up covering this week's study |
+| **Interactive Code** | [Reproducible Analysis Notebook](notebooks/week08_linear_models_lda_logistic.ipynb) | Step-by-step notebook organized into stages A–E |
 
 ---
 
@@ -70,7 +72,7 @@ The dataset (`data/heart.csv`) is a course-curated multi-site **UCI Heart Diseas
 * **In-Fold Preprocessing:** Numeric imputation, missingness indicators, standardization, and one-hot encoding are fit strictly inside each training fold. On the full development set, encoding yields `24` features (`25` nominal parameters for Logistic Regression vs. `300` shared covariance parameters for LDA).
 * **Candidate Models & Selection Rule:** Evaluates a prevalence baseline, Gaussian Naive Bayes, LDA, **Shrinkage LDA**, **Logistic Regression**, Random Forest, XGBoost, and RBF-SVM. Primary model selection compares Logistic Regression against Shrinkage LDA on development-set misclassification cost (`5 × FN + FP`), breaking ties with the Brier score.
 * **Thresholds & Bootstrap:** Probability thresholds are swept over `0.05–0.95` (step `0.01`). Uncertainty intervals use `650` Bootstrap resamples for test metrics and `180` resamples for age-coefficient stability.
-* **Saved Experiment Records:** `results/冻结方案_先于测试.json` locks in the selected model, threshold, and scoring rules prior to test evaluation, while `results/完整结果摘要.json` stores all numerical outputs and experimental settings.
+* **Saved Experiment Records:** `results/frozen_protocol_before_test.json` locks in the selected model, threshold, and scoring rules prior to test evaluation, while `results/analysis_summary.json` stores all numerical outputs and experimental settings.
 
 ---
 
@@ -126,9 +128,9 @@ python code/run_analysis.py --out /tmp/week08-rerun
 ### 6.2 Explore the Interactive Notebook
 
 ```bash
-jupyter notebook notebooks/第8讲_Linear_Model_LDA_Logistic_可复现Notebook.ipynb
+jupyter notebook notebooks/week08_linear_models_lda_logistic.ipynb
 ```
 
 > [!TIP]
 > * **Execution Order:** The notebook cells currently have no cached outputs. Run stages **A–C** (data inspection, development comparison, and pre-test locking) before executing stage **D**, which invokes the full pipeline and overwrites `results/` and `figures/`.
-> * **Fonts:** Make sure CJK fonts such as **Noto Sans CJK** / **Noto Serif CJK** are installed so Chinese figure labels render cleanly when regenerating plots.
+> * **Fonts:** New plots use Matplotlib's **DejaVu Sans** font and English labels. Existing images retain their original labels.

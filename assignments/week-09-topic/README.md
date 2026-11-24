@@ -33,9 +33,9 @@ The goal is to evaluate whether **Bagging, Random Forests, and Boosting** improv
 | **Worksheet & Solutions** | [Complete Solutions (A–H)](report/source/worksheet_final.md) | Full write-up and derivations for Parts A–H |
 | **Reports & Guides** | [Readable Manuscript](report/source/manuscript_readable.md) | Clean Markdown source of the course paper |
 | **Reports & Guides** | [Experiment & Figure Guide](report/source/experiment_design.md) | Experimental protocol, metrics, and plotting specs |
-| **Compiled PDFs** | [Course Report (10 pages)](report/submission/詹步超%2024520260158428%20第九讲.pdf) | Concise 10-page submission report |
-| **Compiled PDFs** | [Full Study Paper (13 pages)](report/generated/第九讲_集成学习_课程论文.pdf) | Two-dataset course paper generated from source |
-| **Compiled PDFs** | [A–H Solutions & Plot Guide (17 pages)](report/generated/第九讲_A-H答案与实验绘图指南.pdf) | Combined solutions and figure documentation |
+| **Compiled PDFs** | [Course Report (10 pages)](report/submission/week09_signed_report.pdf) | Concise 10-page submission report |
+| **Compiled PDFs** | [Full Study Paper (13 pages)](report/generated/week09_ensemble_learning_course_paper.pdf) | Two-dataset course paper generated from source |
+| **Compiled PDFs** | [A–H Solutions & Plot Guide (17 pages)](report/generated/week09_worksheet_solutions_and_plot_guide.pdf) | Combined solutions and figure documentation |
 
 ---
 

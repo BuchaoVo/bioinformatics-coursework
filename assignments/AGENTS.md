@@ -10,7 +10,9 @@
 * **Single Main `README.md` Policy**
   Keep only one `README.md` in each week's root directory—do not add subdirectory READMEs or README variants. Consolidate task requirements, data sources, directory descriptions, run commands, and progress status into the main `README.md`, using English and preserving the existing formatting style.
 * **English by Default**
-  Use English for new or maintained documentation, code comments, Notebook narrative, user-facing messages, model labels, and newly generated plot/table labels. Prefer English filenames for new artifacts. Preserve the language and filenames of original course reports, slides, images, and externally referenced artifacts when translation or renaming would alter originals or break references; explain these exceptions in the main README. Keep scientific values and required course terminology intact. Apply this rule to future weekly maintenance without automatically rewriting unrelated weeks.
+  Use English for new or maintained documentation, code comments, Notebook narrative, user-facing messages, model labels, and newly generated plot/table labels. Keep scientific values and required course terminology intact. Apply this rule to future weekly maintenance without automatically rewriting unrelated weeks.
+* **English File Naming**
+  Use English ASCII filenames for all files, including imported reports, slides, images, datasets, and existing artifacts; prefer descriptive snake_case names. When renaming, update every code path, Notebook reference, document link, and output-generation filename together. Preserve original document/image contents and scientific data; original source language inside those files does not exempt their filenames from this rule. Record any meaningful original labeling discrepancy in the main README.
 * **Content-Driven Directories, No Placeholders**
   Retain only the **code, input data, dependencies, numerical results, required figures, reports and sources, lecture slides, and worksheets** needed for the coursework experiments. Create folders strictly based on actual contents—no empty directories, placeholder files, or unused notebooks.
 
