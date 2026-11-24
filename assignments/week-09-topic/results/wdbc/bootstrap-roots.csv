@@ -1,0 +1,11 @@
+refit,feature,threshold,n_resampled_rows,n_unique_rows
+1,worst perimeter,113.1500015258789,341,219
+2,worst radius,16.795000076293945,341,212
+3,worst perimeter,105.95000076293945,341,210
+4,worst perimeter,105.95000076293945,341,225
+5,worst perimeter,113.75,341,208
+6,mean concave points,0.055730000138282776,341,207
+7,worst radius,17.479999542236328,341,222
+8,worst area,884.75,341,225
+9,worst area,865.3999938964844,341,218
+10,worst area,884.75,341,216

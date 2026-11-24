@@ -1,0 +1,7 @@
+# Keep experiment arrays despite the repository-wide NPZ exclusion.
+!/results/wdbc/*.npz
+!/results/ctg/*.npz
+
+# Keep reruns separate from archived experiment outputs.
+/results/reproduced/
+/figures/reproduced/

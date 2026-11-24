@@ -106,7 +106,7 @@ The roadmap below outlines the planned weekly topics and primary deliverables. *
 
 | Week | Topic | Primary Deliverables | Status |
 | :---: | :--- | :--- | :---: |
-| **09** | Ensemble Learning and Bootstrap | Experiments, code, and report | `Active` |
+| **09** | Ensemble Learning and Bootstrap | [Code, data, results, and reports](assignments/week-09-topic/README.md) | `Materials archived; report reconciliation pending` |
 | **10–16** | *Topics to be announced* | Weekly assignments, experiments, and reports | `Upcoming` |
 
 ---

@@ -12,7 +12,7 @@
 | 06 | TBD | TBD | TBD | TBD | Not started |
 | 07 | TBD | TBD | TBD | TBD | Not started |
 | 08 | TBD | TBD | TBD | TBD | Not started |
-| 09 | TBD | TBD | TBD | TBD | Not started |
+| 09 | TBD | 集成学习与 Bootstrap | [A–H 作业及实验材料](../assignments/week-09-topic/README.md) | TBD | 材料已归档，报告版本待核对 |
 | 10 | TBD | TBD | TBD | TBD | Not started |
 | 11 | TBD | TBD | TBD | TBD | Not started |
 | 12 | TBD | TBD | TBD | TBD | Not started |

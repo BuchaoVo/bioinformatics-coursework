@@ -1,0 +1,12 @@
+{
+  "sklearn_version": "1.8.0",
+  "algorithm": "Discrete SAMME, binary labels 0/1",
+  "model": "AdaBoostClassifier(n_estimators=50,learning_rate=1,random_state=1010), default depth-1 stumps",
+  "stages_recorded": 10,
+  "all_recorded_errors_match_fitted_model": true,
+  "selected_samples": "First four first-stage misclassified rows and first four correctly classified rows, by supplied training order.",
+  "update": "alpha=ln((1-e)/e); unnormalized w_next=w*exp(alpha*I[wrong]); normalize all weights.",
+  "relation_to_classic_binary_adaboost": "With labels -1/+1, classic alpha=0.5*ln((1-e)/e) and update w*exp(-alpha*y*h). After normalization, its relative wrong/correct multiplier exp(2*alpha) equals exp(alpha_SAMME); the normalized weights agree.",
+  "interpretation": "After a full learning_rate=1 binary SAMME update, current stump mistakes jointly carry weight 0.5. A particular row can lose weight when later classified correctly. Weight measures training attention, not disease risk.",
+  "test_labels_read": false
+}
