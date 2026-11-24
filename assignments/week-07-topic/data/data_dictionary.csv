@@ -1,0 +1,30 @@
+﻿index_1_based,feature,kind,handling
+1,age,numeric,median imputation and scaling
+2,sex,categorical,one-hot encoding
+3,on_thyroxine,binary flag,most-frequent imputation
+4,query_on_thyroxine,binary flag,most-frequent imputation
+5,on_antithyroid_medication,binary flag,most-frequent imputation
+6,sick,binary flag,most-frequent imputation
+7,pregnant,binary flag,most-frequent imputation
+8,thyroid_surgery,binary flag,most-frequent imputation
+9,I131_treatment,binary flag,most-frequent imputation
+10,query_hypothyroid,binary flag,most-frequent imputation
+11,query_hyperthyroid,binary flag,most-frequent imputation
+12,lithium,binary flag,most-frequent imputation
+13,goitre,binary flag,most-frequent imputation
+14,tumor,binary flag,most-frequent imputation
+15,hypopituitary,binary flag,most-frequent imputation
+16,psych,binary flag,most-frequent imputation
+17,TSH_measured,binary flag,most-frequent imputation
+18,TSH,numeric,median imputation and scaling
+19,T3_measured,binary flag,most-frequent imputation
+20,T3,numeric,median imputation and scaling
+21,TT4_measured,binary flag,most-frequent imputation
+22,TT4,numeric,median imputation and scaling
+23,T4U_measured,binary flag,most-frequent imputation
+24,T4U,numeric,median imputation and scaling
+25,FTI_measured,binary flag,most-frequent imputation
+26,FTI,numeric,median imputation and scaling
+27,TBG_measured,binary flag,most-frequent imputation
+28,TBG,numeric,median imputation and scaling
+29,referral_source,categorical,one-hot encoding

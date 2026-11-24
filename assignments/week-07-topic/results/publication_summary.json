@@ -1,0 +1,103 @@
+{
+  "n": 9172,
+  "target_count": {
+    "0": 6771,
+    "1": 2401
+  },
+  "important": [
+    {
+      "feature": "TSH",
+      "ap_decrease": 0.4212399472318607
+    },
+    {
+      "feature": "T3",
+      "ap_decrease": 0.1643315301312795
+    },
+    {
+      "feature": "TT4",
+      "ap_decrease": 0.0913574103095556
+    },
+    {
+      "feature": "FTI",
+      "ap_decrease": 0.0863480056486976
+    },
+    {
+      "feature": "T4U",
+      "ap_decrease": 0.0301802134391542
+    },
+    {
+      "feature": "TBG",
+      "ap_decrease": 0.0268322219630874
+    }
+  ],
+  "top_numeric_fdr": [
+    {
+      "feature": "TSH",
+      "n_non_dash": 2248,
+      "n_dash": 6082,
+      "median_non_dash": 2.1,
+      "median_dash": 1.3,
+      "rank_biserial_r": 0.2009714360442867,
+      "p_value": 3.6105188934466945e-45,
+      "q_bh": 2.5273632254126865e-44
+    },
+    {
+      "feature": "T3",
+      "n_non_dash": 1806,
+      "n_dash": 4762,
+      "median_non_dash": 1.6,
+      "median_dash": 2.0,
+      "rank_biserial_r": -0.19922717824713276,
+      "p_value": 7.457511249968396e-36,
+      "q_bh": 1.7400859583259592e-35
+    },
+    {
+      "feature": "TBG",
+      "n_non_dash": 98,
+      "n_dash": 251,
+      "median_non_dash": 36.0,
+      "median_dash": 23.0,
+      "rank_biserial_r": 0.8622245711033418,
+      "p_value": 5.096525677980045e-36,
+      "q_bh": 1.7400859583259592e-35
+    },
+    {
+      "feature": "TT4",
+      "n_non_dash": 2304,
+      "n_dash": 6426,
+      "median_non_dash": 109.0,
+      "median_dash": 104.0,
+      "rank_biserial_r": 0.07505195365183104,
+      "p_value": 8.63329308102004e-08,
+      "q_bh": 1.510826289178507e-07
+    },
+    {
+      "feature": "age",
+      "n_non_dash": 2401,
+      "n_dash": 6767,
+      "median_non_dash": 56.0,
+      "median_dash": 54.0,
+      "rank_biserial_r": 0.04226029657240371,
+      "p_value": 0.0020587435849717395,
+      "q_bh": 0.002882241018960435
+    },
+    {
+      "feature": "T4U",
+      "n_non_dash": 2218,
+      "n_dash": 6145,
+      "median_non_dash": 0.96,
+      "median_dash": 0.96,
+      "rank_biserial_r": 0.032007665663214224,
+      "p_value": 0.025197130359473,
+      "q_bh": 0.029396652086051838
+    }
+  ],
+  "pca_sample_n": 2400,
+  "age_range": [
+    1.0,
+    97.0
+  ],
+  "TBG_missing": 0.9619494112516355,
+  "T3_missing": 0.2839075447012647,
+  "shap_available": true
+}

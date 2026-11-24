@@ -99,7 +99,7 @@ The roadmap below outlines the planned weekly topics and primary deliverables. *
 | :---: | :--- | :--- | :---: |
 | **05** | Statistical Inference and Hypothesis Testing | Statistical analysis report | `Active` |
 | **06** | Multiple Testing and False Discovery Rate (FDR) | Multiple-testing analysis & results | `Active` |
-| **07** | High-Dimensional Data Analysis and Dimensionality Reduction | PCA & dimensionality reduction analysis | `Active` |
+| **07** | Thyroid Diagnostic Codes and Model Comparison | [Code, data, results, and reports](assignments/week-07-topic/README.md) | `Materials organized; full rerun and submission pending` |
 | **08** | Linear Models and Classification | Model comparison report | `Active` |
 
 ### Module 3 · Advanced Topics and Course Assignments (`Weeks 09–16`)

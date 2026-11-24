@@ -1,0 +1,5 @@
+﻿source_row_1based,original_age,action,reason
+2977,455.0,recode age to missing; median impute within each fit,outside prespecified plausible age interval 1–110
+5711,65511.0,recode age to missing; median impute within each fit,outside prespecified plausible age interval 1–110
+6393,65512.0,recode age to missing; median impute within each fit,outside prespecified plausible age interval 1–110
+8106,65526.0,recode age to missing; median impute within each fit,outside prespecified plausible age interval 1–110

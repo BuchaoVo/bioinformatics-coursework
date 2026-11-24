@@ -1,0 +1,31 @@
+{
+  "n": 1834,
+  "positives": 480,
+  "threshold": 0.49999999999999994,
+  "accuracy": 0.9640130861504908,
+  "balanced_accuracy": 0.9689038650910882,
+  "precision": 0.8935361216730038,
+  "recall_sensitivity": 0.9791666666666666,
+  "specificity": 0.9586410635155096,
+  "f1": 0.9343936381709742,
+  "roc_auc": 0.993683838010832,
+  "pr_auc_average_precision": 0.9735645614265248,
+  "brier": 0.02613331094193378,
+  "log_loss": 0.096392461260446,
+  "TN": 1298,
+  "FP": 56,
+  "FN": 10,
+  "TP": 470,
+  "model": "LightGBM",
+  "confidence_intervals": {
+    "ap_ci95": [
+      0.9545657333524772,
+      0.9881253248568274
+    ],
+    "roc_auc_ci95": [
+      0.9908843594993252,
+      0.996225535618194
+    ],
+    "method": "nonparametric test-set bootstrap, 650 replicates, fixed model"
+  }
+}
